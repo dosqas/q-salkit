@@ -1,0 +1,79 @@
+# -------------------------
+# Python & Virtual Envs
+# -------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+*.pyd
+*.dll
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.idea/
+.vscode/
+
+# -------------------------
+# Jupyter & IPython
+# -------------------------
+# Auto-saved notebook checkpoints
+.ipynb_checkpoints/
+
+# Notebook metadata noise
+**/.ipynb_checkpoints/*
+**/*.ipynb_checkpoints/*
+
+# Output cells (optional - keep clean notebooks)
+# Uncomment if you prefer to strip large outputs automatically
+# **/*.nbconvert.ipynb
+# **/*.nbconvert-checkpoint.ipynb
+
+# -------------------------
+# Data, Models, and Results
+# -------------------------
+data/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+
+# Trained models
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Experiment outputs
+runs/
+outputs/
+results/
+logs/
+wandb/
+mlruns/
+
+# -------------------------
+# Build & Packaging
+# -------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+*.spec
+
+# ---
