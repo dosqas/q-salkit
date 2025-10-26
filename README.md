@@ -1,3 +1,3 @@
 # q-salkit
 
-Project proposal can be found at: https://github.com/qiskit-advocate/qamp-2025/issues/4#issuecomment-3414724761
+Project proposal can be found [here](https://github.com/qiskit-advocate/qamp-2025/issues/4)
