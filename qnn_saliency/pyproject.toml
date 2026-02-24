@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnn-saliency"
+version = "0.1.0"
+description = "Saliency and Sensitivity Toolkit for Quantum Neural Networks"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "QAMP Team", email = "qamp@example.com"}
+]
+keywords = [
+    "quantum",
+    "machine-learning",
+    "qiskit",
+    "interpretability",
+    "saliency",
+    "xai"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "qiskit>=1.0",
+    "qiskit-machine-learning>=0.7",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "mypy>=1.0",
+    "sphinx>=6.0",
+]
+all = ["qnn-saliency[torch,dev]"]
+
+[project.urls]
+Homepage = "https://github.com/qiskit-community/qnn-saliency"
+Documentation = "https://qnn-saliency.readthedocs.io"
+Repository = "https://github.com/qiskit-community/qnn-saliency"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
